@@ -1,0 +1,25 @@
+GET http://127.0.0.1:8000/api/v1/categorias/?page=2 HTTP/1.1
+Content-Type: "application/json"
+
+###
+
+POST http://127.0.0.1:8000/api/v1/categorias/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Aplicaciones CLI"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/tecnologias/ HTTP/1.1
+Content-Type: "application/json"
+
+###
+
+POST http://127.0.0.1:8000/api/v1/tecnologias/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Django"
+}
