@@ -128,12 +128,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Paginacion con rest
 REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASESS": [
-        "rest_framework_simplejwt.authentication.JWTAuthentication", #apps y frontends,
-        "rest_framework.authentication.SessionAuthentication" # API navegable
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
     ],
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticatedOrReadOnly"
+        "rest_framework.permissions.IsAuthenticatedOrReadOnly",
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 1
